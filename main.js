@@ -1,6 +1,10 @@
 (function() {
   'use strict';
 
+
+
+  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!REDO THIS ENTIRE ASSIGNMENT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
   // ---------------------
   // Define a function max() that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in Javascript.
   // ---------------------
@@ -22,62 +26,73 @@
         } else {
           return c;
 
-        }elseif(b >= c){
-        return b;
+        }else if (b >= c) {
+          return b;
+
+        } else {
+          return c;
+        }
+      }
+
+
+      // ---------------------
+      // Define a function isVowel() that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
+      // ---------------------
+
+      function isVowel(x) {
+        var charcter = letter.toLowerCase();
+        var vowels = ["a", "e", "i", "o", "u", "y,", "w"];
+        for (var i=0, i<vowels.length, i++){
+
+          if(char == vowels[i]){
+            return true;
+          }
+            return false;
+          }
+
+      }
+
+
+      // ---------------------
+      // Write a function rovarspraket() that will translate a text into "rövarspråket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
+      // ---------------------
+    //   function rovarspraket(phrase) {
+    //     var rov = [];
+    //     for (i in phrase) {
+    //       rov.append(str(i) + "o" + str(i));
+    //     }
+    //     var last = "".join(rov);
+    //     return last;
+    //   }
+    // }
+    //
+      function rovarspraket(text) {
+      var newString = ' ';
+
+        for (var i=0, i < text.length, i++){
+
+          if (isVowel(text[i]) || text[i] == ' '){
+          newString += text[i];
 
       }else{
-        return c;
-      }
+          newString += text[i] +"o" + text[i]};
+        }
+
+      return newString;
     }
-
-
-
-  
-
-  // ---------------------
-  // Define a function isVowel() that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
-  // ---------------------
-
-  function isVowel(x) {
-    var vowels = ["a", "e", "i", "o", "u", "y,", "w"];
-    if (x in vowels) {
-      return True;
-
-    } else {
-      return False;
-    }
-
-  }
-
-
-
-  // ---------------------
-  // Write a function rovarspraket() that will translate a text into "rövarspråket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
-  // ---------------------
-    function rovarspraket(phrase) {
-      var rov = [];
-      for (i in phrase) {
-        rov.append(str(i) + "o" + str(i));
-      }
-      var last = "".join(rov);
-      return last;
-    }
-
-  
 
   // ---------------------
   // Define a function sum() and a function multiply() that sums and multiplies (respectively) all the numbers in an array of numbers. For example, sum([1,2,3,4]) should return 10, and multiply([1,2,3,4]) should return 24.
   // ---------------------
-  //   function multiply(n){
-  //   var total = 1;
-  //   for(i in range(0,len(n))) {
-  //     var total
-  //     *= n[i];
-  //   }
-  //
-  //     print(total)
-  //   }
+    function multiply(n){
+    var total = 1;
+    for(i in range(0,len(n))) {
+      var total(!= n[i])
+    }
 
+      print(total)
+    }
+  //
 
 
 
@@ -98,11 +113,11 @@
   // ---------------------
     function findLongestWord(list){
       var longest_word = " ";
-      for(i in list){
-.        if (length(i) > length(longest_word){
-            longest_word = i}
+      for(i in list)(if (length(i) > length(longest_word)){
+        longest_word = i
       }
-      return length(longest_word)
+
+      return length(longest_word);
     }
 //
 
@@ -170,3 +185,6 @@
   console.assert(charFreq('abbabcbdbabdbdbabababcbcbab').d === 3);
 
 })();
+
+
+       // for ( var counter=0,  , counter++)
