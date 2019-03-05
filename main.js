@@ -89,16 +89,19 @@
   // ---------------------
 
 
+var numbers = [2, 4, 3];
+              function sum(x) {
+                  var sum = x[0] + x[1] + x[2];
+                  console.log(sum);
+              }
 
-    // function multiply(n){
-    // var total = 1;
-    // for(i in range(0,len(n))) {
-    //   var  total !== n[i]
-    // }
-    //
-    //   print(total)
-    // }
-  //
+              sum(numbers);
+              function multiply(x){
+                  var result = x[0] * x[1] * x[2];
+                  console.log(result);
+              }
+              multiply(numbers);
+
 
 
 
