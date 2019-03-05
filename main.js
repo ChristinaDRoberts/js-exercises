@@ -16,23 +16,26 @@
           return a;
         }
 
-        // ---------------------
+  // ---------------------
   // Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
   // ---------------------
-    function maxOfThree(a,b,c) {
-      if (a >= b) {
-        if (a > c) {
-          return a;
-        } else {
-          return c;
+  function maxOfThree(a, b, c) {
 
-        }else if (b >= c) {
-          return b;
-
-        } else {
-          return c;
-        }
+    if (a >= b) {
+      if (a > c) {
+        return a;
+      } else {
+        return c;
       }
+
+    }else if (b >= c) {
+        return b;
+
+    } else {
+        return c;
+
+    }
+  }
 
 
       // ---------------------
@@ -42,9 +45,9 @@
       function isVowel(x) {
         var charcter = letter.toLowerCase();
         var vowels = ["a", "e", "i", "o", "u", "y,", "w"];
-        for (var i=0, i<vowels.length, i++){
+        for(var i=0; i<vowels.length; i++){
 
-          if(char == vowels[i]){
+          if(char === vowels[i]){
             return true;
           }
             return false;
@@ -69,9 +72,9 @@
       function rovarspraket(text) {
       var newString = ' ';
 
-        for (var i=0, i < text.length, i++){
+        for (var i=0; i < text.length; i++){
 
-          if (isVowel(text[i]) || text[i] == ' '){
+          if (isVowel(text[i]) || text[i] === ' '){
           newString += text[i];
 
       }else{
@@ -84,14 +87,17 @@
   // ---------------------
   // Define a function sum() and a function multiply() that sums and multiplies (respectively) all the numbers in an array of numbers. For example, sum([1,2,3,4]) should return 10, and multiply([1,2,3,4]) should return 24.
   // ---------------------
-    function multiply(n){
-    var total = 1;
-    for(i in range(0,len(n))) {
-      var total(!= n[i])
-    }
 
-      print(total)
-    }
+
+
+    // function multiply(n){
+    // var total = 1;
+    // for(i in range(0,len(n))) {
+    //   var  total !== n[i]
+    // }
+    //
+    //   print(total)
+    // }
   //
 
 
@@ -113,13 +119,13 @@
   // ---------------------
     function findLongestWord(list){
       var longest_word = " ";
-      for(i in list)(if (length(i) > length(longest_word)){
+      for(i in list) if ((i).length > (longest_word).length){
         longest_word = i
       }
 
       return length(longest_word);
     }
-//
+
 
   // ---------------------
   // Define a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i.
@@ -129,7 +135,7 @@
       var longest_word = "";
       var longest_word_greater = [];
       for (i in words) {
-        if (length(i) > length(longest_word)){
+        if (i.length > longest_word.length){
           longest_word = i;
         }else{
 
